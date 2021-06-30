@@ -1,0 +1,605 @@
+
+*,::before, ::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--body-font);
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.i-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: #fff;
+}
+.i-header .container__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.container__icons{
+    padding: 0 5px;
+}
+.container__icons i{
+    padding: 0 15px;
+    color: #333;
+}
+.i-header .container__logo h1{
+    font-size: 1.2em;
+    color: #86ba09;
+    font-weight: 900;
+}
+.fa-shopping-bag{
+    padding: 0 5px;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.i-header .container__logo  i{
+    color: #333;
+    padding: 0 15px;
+    font-size: 1.8rem;
+}
+
+
+.nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.nav__menu{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 50vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #86ba09;
+    transition:  .6s ease-in-out;
+    z-index: 100000;
+}
+.nav__close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #3e5703;
+    cursor: pointer;
+    padding: 15px;
+}
+.nav__item{
+    margin-bottom: 2rem;
+}   
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__list a:hover,
+.nav__list .active{
+    background-color: #5d8304;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.nav__list .nav__link{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 600;
+    transition: .1s ;
+}
+
+.nav__toggle{
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.show{
+     left: 0;
+}
+
+.secction__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.secction__banner h2{
+    font-size: 2rem;
+    color: #2a6049;
+    font-weight: var(--font-bold);
+}
+.secction__banner p{
+    color: #2a6049;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.container__img{
+    margin-top: 20px;
+    position: relative;
+}
+.secction__banner .publicidad{
+    position: absolute;
+    left: 15px;
+}
+.doit{
+    width: 70px;
+    height: 20px;
+    background-color: #86ba09;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+.publicidad .click{
+    background: #86ba09;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.publicidad h4{
+    color: #fff;
+    font-size: 1rem;
+}
+.container__img img{
+    width: 100vw;
+} 
+.products{
+    margin-top: 50px;
+}
+.products h2{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+.products .hoja{
+    text-align: center;
+    color: #86ba09;
+}
+.products .conainer__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.products .conainer__img figure{
+    width: 100px;
+}
+.products .conainer__img figure img{
+    width: 100%;
+}
+.products .conainer__img figure p{
+    text-align: center;
+    font-weight: 900;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+.products .conainer__img figure p.active{
+    color: #86ba09;
+}
+.container__carrusel{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.container__carrusel article{
+    width: 320px;
+    margin: auto;
+    
+}
+.container__carrusel article img{
+    width: 315px;
+}
+.container__icon{
+    text-align: center;
+}
+.container__icon i{
+    font-size: 1.5em;
+    padding: 0 20px;
+    color: #86ba09;
+}
+
+.container__carrusel h2{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 800;
+    color: #000;
+    font-size: 1rem;
+}
+.container__carrusel p{
+    text-align: center;
+    color: #86ba09;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.container__star{
+    text-align: center;
+    color: #b2b3b2;
+}
+.Descuentos{
+    margin-top: 80px;
+    background-color: #e04203;
+    height: 25vh;
+}
+
+.Descuentos h2{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+.Descuentos p{
+    text-align: center;
+    color: #fff;
+}
+.Descuentos form{
+    text-align: center;
+}
+.Descuentos form input{
+    border: none;
+    width: 90%;
+    height: 40px;
+}
+.Descuentos form button{
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #86ba09;
+    color: #fff;
+}
+footer{
+    margin-top: 80px;
+}
+footer .footer__logo{
+    margin: 0 15px;
+    color: #86ba09;
+    display: flex;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box h5{
+    text-align: center;
+}
+.social a{
+    padding: 5px 20px;
+    background-color: #86ba09;
+    color: #fff;
+}
+.center{
+    margin-top: 30px;
+}
+.right{
+    margin-top: 30px;
+
+}
+.bottom{
+    text-align: center;
+}
+.email input{
+    width: 100%;
+}
+.msg textarea{
+    width: 100%;
+}
+.btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #86ba09;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+  }
+  .pagos{
+      text-align: center;
+      margin-top: 15px;
+  }
+  .pagos i{
+      padding: 0 20px;
+      font-size: 1.5em;
+      color: rgb(138, 138, 138);
+  }
+  .container__organic{
+      margin-top: 80px;
+  }
+  .container__organic .container__imgorganic{
+      display: flex;
+      justify-content: space-around;
+
+  }
+  .container__organic .container__imgorganic img{
+      width: 100px;
+  }
+
+
+  /******Login**********/
+  header{
+    height: 40px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.home  a{
+    padding: 0 15px;
+    color: #0089d0;
+    font-weight: 900;
+}
+.home i{
+    color: #0089d0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: -65px;
+    
+}
+.text__social{
+    color: black;
+}
+.formWraper{
+    display: flex;
+    width: 80vw;
+    height: 85vh;
+    margin-top: 120px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 29px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 29px 0px rgba(50, 50, 50, 0.75);
+}
+.formDiv{
+    width: 100%;
+    padding: 4%;
+    background-color: lavender;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.formDiv h2{
+    color: rgba(20, 20, 20, 0.75);
+}
+.welcomeDiv{
+   display: none;
+}
+.welcomeDiv h2{
+    margin-top: 150px;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: -3px 1px 5px rgb(49, 49, 49);
+}
+.socialbtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.socialbtn a{
+    color: black;
+}
+.socialbtn i{
+    width: 50px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    margin: 5px;
+    line-height: 30px;
+    color: #86ba09;
+}
+
+.text__banner{
+    font-size: small;
+    color: #fff;
+    font-size: 1em;
+}
+.orDiv{
+    width: 10%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top: -16px;
+    justify-content: center;
+}
+.formGroup{
+    width: 100%;
+    position: relative;
+}
+.formGroup input{
+    width: 90%;
+    padding: 15px 35px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(141, 141, 141);
+}
+.formGroup span{
+    font-size: 14px;
+    font-weight: 900;
+}
+.formGroup i{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #86ba09;
+}
+
+input::placeholder{
+    position: relative;
+    left: 30px;
+}
+.checkbox a{
+    color: #86ba09;
+    text-decoration: underline;
+}
+
+.btn__login{
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #86ba09;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.Parrafo{
+    font-size: 14px;
+}
+
+
+
+@media screen and (min-width: 740px){
+    .i-header .container__logo h1{
+        font-size: 1.5em;
+    }
+   
+    .container__carrusel{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+    .container__carrusel article{
+        box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.55);
+    }
+    .Descuentos form{
+        display: flex;
+        justify-content: center;
+    }
+    .Descuentos form input{
+        width: 50%;
+    }
+    .Descuentos form button{
+        height: 40px;
+        margin-top: auto;
+        border-radius: none;
+    }
+    .Descuentos{
+        height: 15vh;
+    }
+    .publicidad .click{
+        background: #86ba09;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .publicidad h4{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .doit{
+        width: 100px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .container__organic .container__imgorganic img{
+        width: 150px;
+    }
+    .welcomeDiv{
+        width: 80%;
+        padding: 10px;
+        background-image: url(../img/login.jpg);
+        background-size: cover;
+        text-align: center;
+        display: block;
+    }
+    .formGroup i{
+        position: absolute;
+        left: 25px;
+        top: 15px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1024px){
+   
+    .container__items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .i-header{
+        z-index: 20;
+    }
+    .container__carrusel article{
+        box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.55);
+    }
+    .container__carrusel{
+        display: flex;
+    }.Descuentos{
+        height: 25vh;
+    }
+    .publicidad .click{
+        background: #86ba09;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
+    .publicidad h4{
+        color: #fff;
+        font-size: 3rem;
+    }
+    .secction__banner .publicidad{
+        margin-left: 50px;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .btn button{
+        height: 40px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #86ba09;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .pagos i{
+        font-size: 1.8em;
+    }
+    .formGroup i{
+        position: absolute;
+        left: 35px;
+        top: 15px;
+    }
+}
+
